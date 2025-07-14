@@ -2,25 +2,42 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla Interactiva</title>
+  <title>Malla Trabajo Social</title>
   <style>
     body {
       font-family: sans-serif;
-      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
     }
 
     .malla {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+      overflow-x: auto;
     }
 
     .semestre {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       gap: 10px;
-      padding: 10px;
+      padding: 15px;
       border-radius: 10px;
+      min-width: 250px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .titulo-semestre {
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 10px;
     }
 
     .ramo {
@@ -29,35 +46,51 @@
       padding: 10px;
       border-radius: 5px;
       text-align: center;
-      flex: 1;
     }
 
-    /* Colores pasteles distintos por semestre */
+    /* Colores pastel para cada columna/semestre */
     .semestre:nth-child(1) { background-color: #ffe0e0; }
     .semestre:nth-child(2) { background-color: #e0f7ff; }
     .semestre:nth-child(3) { background-color: #e0ffe4; }
     .semestre:nth-child(4) { background-color: #fff5e0; }
     .semestre:nth-child(5) { background-color: #f0e0ff; }
+    .semestre:nth-child(6) { background-color: #e0e0ff; }
+    .semestre:nth-child(7) { background-color: #fce0f0; }
+    .semestre:nth-child(8) { background-color: #e0f5fc; }
+    .semestre:nth-child(9) { background-color: #f0f9e0; }
+    .semestre:nth-child(10) { background-color: #ffeacc; }
   </style>
 </head>
 <body>
 
-  <h1>Malla Interactiva</h1>
+  <h1>Malla Curricular - Trabajo Social</h1>
 
   <div class="malla">
+    <!-- SEMESTRE 1 -->
     <div class="semestre">
-      <div class="ramo">Matemáticas I</div>
-      <div class="ramo">Introducción</div>
-      <div class="ramo">Programación</div>
+      <div class="titulo-semestre">Semestre 1</div>
+      <div class="ramo">Análisis histórico y político del Trabajo Social</div>
+      <div class="ramo">Fundamentos de la investigación</div>
+      <div class="ramo">Perspectivas antropológicas</div>
+      <div class="ramo">Taller de memoria y trayectorias</div>
+      <div class="ramo">Comunicación académica</div>
+      <div class="ramo">Perspectivas psicológicas</div>
     </div>
+
+    <!-- SEMESTRE 2 -->
     <div class="semestre">
-      <div class="ramo">Matemáticas II</div>
-      <div class="ramo">Física</div>
-      <div class="ramo">Estructuras</div>
+      <div class="titulo-semestre">Semestre 2</div>
+      <div class="ramo">Pensamiento latinoamericano</div>
+      <div class="ramo">Metodología de investigación</div>
+      <div class="ramo">Teorías sociales</div>
+      <div class="ramo">Diversidad y diálogo de saberes</div>
+      <div class="ramo">Taller de análisis metodológico</div>
+      <div class="ramo">Electivo antropológico cristiano</div>
     </div>
-    <!-- Agregá más semestres acá -->
+
+    <!-- AGREGÁ MÁS SEMESTRES IGUAL QUE ESTOS -->
+
   </div>
 
 </body>
 </html>
-
