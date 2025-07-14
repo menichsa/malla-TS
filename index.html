@@ -166,10 +166,12 @@
         ramo.classList.add('aprobado');
       }
 
-      ramo.addEventListener('click', () => {
+      function toggleAprobado() {
         ramo.classList.toggle('aprobado');
         localStorage.setItem(id, ramo.classList.contains('aprobado'));
-      });
+      }
+
+      ramo.addEventListener('pointerdown', toggleAprobado);
     });
   </script>
 </body>
