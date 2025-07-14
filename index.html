@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+
+    .malla {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .semestre {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .ramo {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      flex: 1;
+    }
+
+    /* Colores pasteles distintos por semestre */
+    .semestre:nth-child(1) { background-color: #ffe0e0; }
+    .semestre:nth-child(2) { background-color: #e0f7ff; }
+    .semestre:nth-child(3) { background-color: #e0ffe4; }
+    .semestre:nth-child(4) { background-color: #fff5e0; }
+    .semestre:nth-child(5) { background-color: #f0e0ff; }
+  </style>
+</head>
+<body>
+
+  <h1>Malla Interactiva</h1>
+
+  <div class="malla">
+    <div class="semestre">
+      <div class="ramo">Matemáticas I</div>
+      <div class="ramo">Introducción</div>
+      <div class="ramo">Programación</div>
+    </div>
+    <div class="semestre">
+      <div class="ramo">Matemáticas II</div>
+      <div class="ramo">Física</div>
+      <div class="ramo">Estructuras</div>
+    </div>
+    <!-- Agregá más semestres acá -->
+  </div>
+
+</body>
+</html>
 
